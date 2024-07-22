@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* max-width: 2000px; */
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  html,
+  body {
+    background-color: #080a21;
+  
+    color: white;
+  
+    font-size: 1rem;
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+    // scroll-behavior: smooth; /*This will make it so when you click on a link,
+    // it will scroll to that spot rather than jump*/
+  
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // MAIN SECTION -- contains all of the routers
+  
+  .main-section {
+    background-color: #080a21;
+    background-image: url("./images/bg14.jpg");
+    background-position: top -160px left;
+    background-size: 1200px 2000px;
+    background-repeat: no-repeat;
+    // padding: 1rem;
+    // padding-top: 1rem;
+    position: relative;
+    height: 1900px;
+    min-height: 940px;
+    // max-height: 3000px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  // .disabled-menu-link {
+  //   color: rgba(255, 255, 255, 0.7) !important; // The links on the side menu that aren't clickable
+  // }
+  
+  @media (min-width: 500px) {
+    .main-section {
+      flex-direction: row;
+      padding: 2rem;
+    }
+  }
+  @media (min-width: 800px) {
+    .main-section {
+      background-position: top -200px left;
+      background-size: 1600px 1600px;
+      height: 1600px;
+  
+      // min-height: 800px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .main-section {
+      background-size: 3200px 3200px;
+      background-position: top -255px left -300px;
+    }
+  }
+  
+  // The breadcrumb menu shows up when the width is less than 500px
+  .breadcrumbMenu {
+    color: rgb(235, 226, 213);
+    width: 100%;
+    text-align: left;
+  }
+  .breadcrumbMenu a.section {
+    color: rgb(235, 226, 213);
+  }
+  i.right.chevron.icon.divider {
+    color: rgb(150, 146, 141);
+  }
+  i.right.arrow.icon.divider {
+    color: rgb(214, 206, 195);
+  }
+  
+  .content {
+    padding: 2rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  // Home
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button,
+  .button,
+  .ui.button {
+    margin: 1rem;
+  }
+  
+  .race-text,
+  .class-text {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 400px) and (max-width: 600px) {
+    .home-text {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .home-text,
+    .race-text,
+    .class-text {
+      text-align: left;
+    }
+  }
+  // Race and Class Container
+  .race-accordian,
+  .class-accordian {
+    margin-top: 1rem;
+  }
+  @media (min-width: 900px) {
+    // .classes-page,
+    // .race-page {
+    //   padding-right: 4rem;
+    //   padding-left: 4rem;
+    // }
+    .race-accordian,
+    .class-accordian {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  // Race Accordian
+  .accordian,
+  .accordian .title {
+    text-align: left;
+  }
+  .race-stats,
+  .race-qualities,
+  .class-stats,
+  .class-qualities {
+    text-align: left;
+    padding: 1.5rem;
+  }
+  
+  // Radios
+  
+  .race-radio,
+  .class-radio {
+    padding: 1rem;
+    .radio-option {
+      display: inline-block;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .radio-input {
+    margin-left: 1.2rem;
+  }
+  
+  // I don't like to use !important, but the framework was being tricky.
+  // .ui.styled.accordion,
+  // .ui.styled.accordion .accordion,
+  // .ui.styled.accordion div.title {
+  //   // background: #0d0e24 !important;
+  //   background: #04061d !important;
+  
+  //   color: #bfc0db !important;
+  //   color: #d3d3d4 !important;
+  //   border-top: 1px solid rgba(234, 238, 242, 0.15);
+  //   &:hover {
+  //     // background: #0d0e24 !important;
+  //     // background: #0d0e24 !important;
+  //     background: #04061d !important;
+  //     color: #e9e9f1 !important;
+  //     color: #e9e9f1 !important;
+  //     color: white !important;
+  
+  //     // color: #a5a6be !important;
+  //   }
+  // }
+  
+  // Light style
+  .ui.styled.accordion,
+  .ui.styled.accordion .accordion,
+  .ui.styled.accordion div.title {
+    // background: #f4f4f6 !important;
+    border-radius: 0.28571429rem;
+  }
+  
+  .ui.accordion .accordion .title,
+  .ui.styled.accordion .content,
+  .ui.accordion .title {
+    text-align: left;
+  }
+  .ui.styled.accordion .content {
+    padding-left: 1.4rem;
+  }
+  .ClassAccordian,
+  .blurb {
+    text-align: left;
+    color: black;
+  }
+  .blurb {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  
+  @media (max-width: 900px) {
+    div.ui.inverted.pointing.secondary.vertical.menu {
+      width: 100px;
+    }
+    a.item {
+      width: 100px;
+    }
+  }
+  
+  // Ability Page
+  
+  .ability-table {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .diceSection {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .diceImageDisplay {
+    flex-direction: row;
+  }
+  .diceImage {
+    width: 2rem;
+    margin: 2rem;
+    margin-top: 1rem;
+  
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+      10% {
+        transform: translate(-1px, -2px) rotate(-10deg);
+      }
+      20% {
+        transform: translate(-3px, 0px) rotate(10deg);
+      }
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+      40% {
+        transform: translate(1px, -1px) rotate(6deg);
+      }
+      50% {
+        transform: translate(-1px, 2px) rotate(-6deg);
+      }
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+      100% {
+        transform: translate(1px, -2px) rotate(-6deg);
+      }
+    }
+  }
+  .character-summary {
+    text-align: left;
+    border: rgb(214, 206, 195) solid 1px;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    h4 {
+      text-align: center;
+    }
+  }
+  
+  .footer-section {
+    padding: 1rem;
+    background-color: #080a21;
+    color: #e2e9f3;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  

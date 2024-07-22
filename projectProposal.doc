@@ -1,0 +1,18 @@
+                DND character creator project proposal
+
+    This project will be a dungeons and dragons character creator 
+website, The main reason I feel this would be a good project to pursue
+is that there are no websites that use the full content that dnd 
+supplies.
+    I will build it using react, I feel that it will be the best for me
+to use, it is going to be more front-end focused. I am going to make it
+a website that will be designed to help the users choose their races,  
+classes and subclasses. When you choose a race it will pull the 
+features from the api and add it to the users character sheet.
+    The target user for the website are beginner and advanced dnd players
+who are looking for a character creator that is quick and accurate,
+the demographic would be considered nerds and ttrpg enthusiasts.
+I am going to use a dnd api which has all the race and class data,
+It has all the playable races and classes with subclasses and when a
+user makes a selection it will pull all the important data that they will
+need to know.
